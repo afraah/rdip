@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<style type="text/css">
+		body{
+			background-image: url("quotepic.jpg");
+			 font-family: serif;
+			 font-style: italic;
+		}
+		h1{
+			/*text-align: center;*/
+           color: green;
+           padding: 50px;
+          
+		}
+		ul.a{
+			list-style-type: circle;
+
+		}
+          
+		a:link {
+			   margin:auto;
+ 			  background-color: lightgreen;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+			}
+
+			/* visited link */
+			a:visited {
+			  color: green;
+			}
+
+			/* mouse over link */
+			a:hover {
+			  color: hotpink;
+			}
+
+			/* selected link */
+			a:active {
+			  color: blue;
+			}
+
+			/*image*/
+			img{
+				width:400px;
+				height:200px;
+				margin:10px;
+				outline:5px;
+				outline-style: dotted;
+				outline-color: white;
+				float: left;
+				
+			}
+
+			#theend {
+				color: hotpink;
+				display: none;
+			}
+
+			.fixed {
+			  position: fixed;
+			  bottom: 0;
+			  right: 0;
+			  width: 300px;
+			  border: 3px solid #73AD21;
+			}
+			.topnav {
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  background-color: #4CAF50;
+			  color: white;
+			}
+
+			tr:nth-child(even) {background-color: #f2f2f2;}
+	</style>
+
+
+<body >
+		<div class="topnav">
+	  <a class="active" href="home.html">Home</a>
+	  <a href="registration.html">Registration</a>
+	  <a href="personaldetail.html">Personal Details</a>
+	  
+	</div>
+
+	<img src="flower.png" alt="flower"  >
+	<h1> Hello World! </h1> <br/> <br/><br/> <br/>
+	Welcome!
+	<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<a href="https://www.google.com" > Google it! </a>
+<br/> <br/>
+<table border="1" style="border-style: dotted;">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+
+  </tr>
+</table>
+<div class="fixed"> Welcome to my site! </div>
+<p id="theend"> The end. </p>
+</body>
+</html>
