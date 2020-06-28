@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+				<style>
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			  height:40px;
+			  text-align: center;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: inline-block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover {
+			  background-color: #111;
+			}
+
+			td{
+				border-width:medium;
+				border-color: black;
+				font-weight: bold;
+				height: 25px;
+			}
+
+			.container input{
+				position: absolute;
+				left:160px;
+			}
+
+			input[type="text"], input[type="email"], input[type="number"] {
+			
+			  width:250px;
+
+			} 
+			input[type="radio"] {
+			  display: inline-flex;  
+			  float:50px;
+
+			}
+			</style>
+
+
+</head>
+<body>
+	<a href="https://www.iiit.ac.in/">
+		<img src="iiit-new.png" width="115px" height="70px" style="padding-bottom:15px ">
+     </a>
+		<a href="https://serc.iiit.ac.in/rdip" style="float:right; padding-top: 33px; color:#722AAA"> <b><u>RDIP</u></b></a>
+		<ul>
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="registration.html">Registration Form</a></li>
+		</ul>
+
+
+		<!-- START -->
+        <br/> <br/>
+		<b>
+			<div class="container">
+			<form action="details.html" method="get"> 
+				
+			<label > First Name:</label> <input required  type="text" name="">
+			<br/><br/>
+			<label> E-mail:</label> <input required  type="email" name="">
+			<br/><br/><br/>
+			<label> Phone No:</label> <input required  type="Number" name="">
+			<br/><br/>
+             
+             </div>
+
+			<label style="padding-right: 105px;"> Gender:</label> <input required type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>		<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Other</label>
+			<br/><br/>
+            
+			<label style="padding-right: 30px;"> Reason for RDIP: </label><input required type="radio" id="html" name="reason" value="html">
+			<label for="html">HTML</label>
+			<input type="radio" id="css" name="reason" value="css">
+			<label for="css">CSS</label>
+			<input type="radio" id="js" name="reason" value="js">
+			<label for="js">JavaScript</label><br>
+	         
+	 		<br/>
+
+	 		<div class="container">
+			<label> College: </label><input required type="text" name="">
+		   
+			<br/><br/>
+           
+			<p style="padding-left: 110px;">I declare above details given by me are true.</p>
+			<br/>
+           </div>
+
+
+
+			&nbsp;&nbsp;&nbsp;<input style="margin-right: 200px;" type="submit" name="" value="Submit"> <input type="submit" name="" value="Reset">
+			 </form>
+            
+       </b>
+	
+
+
+</body>
+</html>
