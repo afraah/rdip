@@ -53,6 +53,25 @@
 
 			}
 			</style>
+			<script type="text/javascript">
+				// alert("Hello");
+
+			function validateForm() {
+			  var x = document.forms["myForm"]["fname"].value;
+			  if (x == "") {
+			    alert("Name must be filled out");
+			    return false;
+			  }
+			   if (document.querySelector('.roomselect:checked')) {
+            console.log('foo')
+        } else {
+           alert("Select atleast one Subject Interest");
+           return false;
+        }
+
+            }
+
+			</script>
 
 
 </head>
@@ -71,9 +90,9 @@
         <br/> <br/>
 		<b>
 			<div class="container">
-			<form action="details.html" method="get"> 
+			<form name="myForm" onsubmit="return validateForm()" action="details.html" method="get"> 
 				
-			<label > First Name:</label> <input required  type="text" name="" pattern="[A-Za-z]{1,}">
+			<label > First Name:</label> <input  type="text" name="fname" > <!-- required pattern="[A-Za-z]{1,}" -->
 			<br/><br/>
 			<label> E-mail:</label> <input required  type="email" name="">
 			<br/><br/><br/>
@@ -97,6 +116,15 @@
 			<label for="js">JavaScript</label><br>
 	         
 	 		<br/>
+
+	 		<label style="padding-right: 80px;"> Subject Interests: </label>
+				 		<input type="checkbox" id="vehicle1" name="subinterest" value="ai" class="roomselect">
+			<label for="ai">AI</label>
+			<input type="checkbox" id="vehicle2" name="subinterest" value="wt"  class="roomselect">
+			<label for="wt">WT</label>
+			<input type="checkbox" id="cd" name="subinterest" value="cd"  class="roomselect">
+			<label for="cd"> CD</label><br>
+			<br/>
 
 	 		<div class="container">
 			<label> College: </label><input required type="text" name="">
