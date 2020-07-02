@@ -8,9 +8,19 @@
 
 <body>
 HTML is the standard markup language for creating Web pages.
-<p>It is the way we can put up text/images/etc on pages.
+<p id="words">It is the way we can put up text/images/etc on pages.
 The <!DOCTYPE html> declaration defines that this document is an HTML5 document.</p> 
 <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript and VBScript.</p>
+
+<script type="text/javascript">
+   words=document.getElementById("words").innerHTML;
+   list=words.split(" ");
+   document.write("Words in the 5th, 7th, 10th:");
+   document.write(list[4]+"<br>");
+   document.write(list[6]+"<br>");
+   document.write(list[9]+"<br>");
+
+</script>
 </body>
 
 <iframe src="quotepic.jpg" title="iframe pic"></iframe>

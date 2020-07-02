@@ -37,27 +37,47 @@ Previous Semester's Marks:-
  
   <tr>
     <td></td>
-    <th scope="col">DAA</th>
-    <th scope="col">DCCN</th>
-    <th scope="col">SE</th>
-    <th scope="col">FM</th>
-    <th scope="col">DM</th>
+    <th class="top" scope="col">DAA</th>
+    <th class="top" scope="col">DCCN</th>
+    <th  class="top"scope="col">SE</th>
+    <th  class="top"scope="col">FM</th>
+    <th  class="top"scope="col">DM</th>
   </tr>
   <tr>
     <th scope="row">Marks</th>
-    <td>7</td>
-    <td>8</td>
-    <td>8</td>
-    <td>9</td>
-    <td>7</td>
+    <td class="down">7</td>
+    <td class="down">8</td>
+    <td class="down">8</td>
+    <td class="down">9</td>
+    <td class="down">7</td>
   </tr>
   
 </table>
 </div>
+<br/>
 
+<avg id="avg"> </avg>
 
 <br/>
 <a href="register.html">Click here to register! </a>
 
+
+<script type="text/javascript">
+  
+  var x1=parseInt(document.getElementsByClassName("down")[0].innerHTML);
+
+  var x2=parseInt(document.getElementsByClassName("down")[1].innerHTML);
+  
+  var x3=parseInt(document.getElementsByClassName("down")[2].innerHTML);
+  
+  var x4=parseInt(document.getElementsByClassName("down")[3].innerHTML);
+
+  var x5=parseInt(document.getElementsByClassName("down")[4].innerHTML);
+
+  var ans=(x1+x2+x3+x4+x5)/5;
+  document.write("<br> Average:")
+  document.getElementById("avg").innerHTML= ans;
+
+</script>
 	</body>
 </html>
