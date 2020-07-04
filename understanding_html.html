@@ -9,6 +9,16 @@
 			  $("#show").click(function(){
 			    $("#words").show();
 			  });
+			   $(".who").dblclick(function(){
+			    $("h1").fadeIn("slow");
+			     $("h2").show();
+			       $(".notwho").show();
+			  });
+			     $(".notwho").click(function(){
+			    $("h1").fadeOut();
+			     $("h2").hide();
+			     
+			  });
 			});
 	</script>
 </head>
@@ -34,10 +44,17 @@
     </ul>
   </div>  
 </nav>
-<h1> Afraah Shaik</h1>
-<h2> GNITS </h2>
-<h2> <a href="listofcourses.html"> CSE </a> <h2>
+
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<button class="who"> Double Click to find out. </button>
+<button style="display: none" class="notwho">  Click to fade Out. </button>
+<h1 style="display: none"> Afraah Shaik</h1>
+<h2 style="display: none"> GNITS </h2>
+<h2 style="display: none"> <a href="listofcourses.html"> CSE </a> </h2>
+
+
+
 <body>
 	
 <div class="jumbotron text-center">
