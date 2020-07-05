@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome & Anagram</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body style="background-color: lightblue;">
+<h1 class="bg-dark " style="color:white;"> Palindrome & Anagram</h1>
+<ul>
+	<li>PALINDROME: As you all know, a palindrome is a word that reads the same when read forward or backward. Eg: “MADAM”.
+    </li>
+	<li>ANAGRAM: An anagram is a string of words/word such that if you rearrange the letters of the string in a specific order, you get another MEANINGFUL WORD. Example: Dirty Room(String of words), Dormitory(Second Input)
+    </li>
+</ul>
+
+<center> <b>
+
+<label>Enter to check whether a string is a Palindrome or not: </label> <input type="text" name="pal" id="pal"> <br/>
+ <button class="tryagain" onclick="palindrome()"> Check! </button> <br/> <br/>
+
+ <label>Enter to check whether a string is a Anagram or not: </label> <br/>
+  <label>String of words: </label><input type="text" name="an1" id="an1"> <br/>
+   <label>Word:</label><input type="text" name="an2" id="an2"> <br/>
+   <button class="tryagain" onclick="anagram()"> Check! </button>
+  </b></center>
+
+<button class="tryagain" onclick="tryagain()"> Try Again! </button>
+
+
+<p id="ans"></p> 
+
+<script type="text/javascript"  src="jsfile.js">
+</script>
+</body>
+</html>
