@@ -51,7 +51,7 @@ function calc(){
 	else if(op=="Square Root"){
 		a = document.getElementById('a').value;
 		if(Number.isInteger(a)==false){
-			document.getElementById("ans").innerHTML="Please enter an integer.";
+			document.getElementById("ans").innerHTML="Please enter an integer value.";
 			return false;
 		}
 		c = Math.sqrt(Number(a));
@@ -125,22 +125,28 @@ function palindrome(){
 }
 
 function anagram(){
-	stringA = document.getElementById('an1').value;
-	stringB=document.getElementById('an2').value;
-       stringA = stringA.replace(/[^\w]/g, '');
-        stringA = stringA.toLowerCase();
-        stringB = stringB.replace(/[^\w]/g, '');
-        stringB = stringB.toLowerCase();
-        stringA = stringA.split('');
-        stringA = stringA.sort().join('');
-        stringB = stringB.split('');
-        stringB = stringB.sort().join('');
+	   //Fixed
+		a = document.getElementById('an1').value;
+		b=document.getElementById('an2').value;
+
+        a = a.replace(/[^\w]/g, '');
+        b = b.replace(/[^\w]/g, '');
+
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+    
+        a = a.split('');
+        b = b.split('');
+
+        a = a.sort().join('');
+	    b= b.sort().join('');
        
-       if(stringA===stringB)
+       if(a===b)
        {
            alert("They are Anagrams!");
-           return true;
+           return false;
        }
+
        else{
         alert("They are NOT Anagrams.");
         return false;
@@ -161,7 +167,7 @@ function survive(){
    
 
     if(n1<0 || n1>1000 || n2<0 || n2>1000){
-    	alert("Enter numbers in the range 1-1000!");
+    	alert("Enter numbers in the range 1 to 1000!");
     	return false;
     }
 
@@ -174,8 +180,6 @@ function survive(){
     	alert(map.get(n1)+" VS "+map.get(n2)+": It's a TIE!");
     	return false;   	
     }
-
-    
 
     if(n1==0 && n2==1 || (n1==1 && n2==0)){
     	alert(map.get(n1)+" VS "+map.get(n2) +": Human survives!");
