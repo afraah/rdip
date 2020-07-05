@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation Page</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body style="background-color: lightblue;">
+<h1 class="bg-dark " style="color:white;"> Validation Page</h1>
+Rules:<br/>
+<ul>
+	<li>Name: Cannot take a number as starting letter.</li>
+	<li>Phone Number: Has to be 10 digits, and no alphabets are allowed</li>
+	<li>Email: Has to have a ‘’@’ and “.” in the email url that is given as input.
+</li>
+</ul>
+
+<center> <b>
+
+<form name="valform" method="post" onsubmit="return validate();">
+<label>Enter Name: </label> <input type="text" name="name" id="name"> <br/>
+
+<label id="labelb">Enter Phone Number: </label> <input type="text" name="phone" id="phone"><br/> 
+<label id="labelb">Enter Email: </label> <input type="text" name="email" id="email"><br/> 
+</b></center>
+ <input name="submit" type="submit"  value="Validate!" />    
+ 
+<button class="tryagain" onclick="tryagain()"> Try Again! </button>
+
+
+<p id="ans"></p> 
+
+<script type="text/javascript"  src="jsfile.js">
+</script>
+</body>
+</html>
